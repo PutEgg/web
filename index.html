@@ -37,49 +37,55 @@
     <div class="col s6 offset-s3 m6 offset-m3">
 
 
-		<h2 class="headera white-text">From Test</h2>
+		<h2 class="headera white-text">添加玩家</h2>
 		<div class="row section">
 		<div class="card-panel z-depth-5">
 			<div class="row">
 				<form action="test.php" method="POST" class="col s12">
 					<div class="row">
 						<div class="input-field col s6">
-						<input placeholder="游戏昵称" id="name" name="name" type="text" class="validate">
+						<input placeholder="游戏昵称" id="pname" name="pname" type="text" class="validate">
 						<label for="name" class="active">名字</label>
 						</div>
 
                                                 <div class="input-field col s6">
-                                                <input placeholder="游戏ID" id="uid" name="uid" type="text" class="validate">
-                                                <label for="name" class="active">ID数字</label>
+                                                <input placeholder="游戏密码" id="ppass" name="ppass" type="password" class="validate">
+                                                <label for="name" class="active">密码</label>
                                                 </div>
 
 					</div>
 
 						                                        <div class="row">
-                                                <div class="input-field col s12">
-                                                <input id="site" type="text" name="site" class="validate">
-                                                <label for="name" class="active">个人网站</label>
-                                                </div>
-                                        </div>
-                                        <div class="row">
                                                 <div class="input-field col s6">
-                                                <input id="age" type="text" name="age" class="validate">
-                                                <label for="name" class="active">年龄</label> 
+                                                <input id="pemail" type="text" name="pemail" class="validate">
+                                                <label for="name" class="active">邮箱地址</label>
                                                 </div>
-
                                                 <div class="input-field col s6">
-                                                <input id="sex" type="text" name="sex" class="validate">
-                                                <label for="name" class="active">性别</label>
-                                                </div>
-
-                                        </div>
-						                                                                                        <div class="row">
-                                                <div class="input-field col s12">
-                                                <input id="phone" type="text" name="phone" class="validate" length="11">
-                                                <label for="name" class="active">手机号码</label>
+                                                <input id="pphone" type="text" name="pphone" class="validate">
+                                                <label for="name" class="active">手机号码</label> 
                                                 </div>
                                         </div>
-                                                <button type="submit" class="btn waves-effect waves-light btn tooltipped" data-position="right" data-delay="50" data-tooltip="写入你的数据！">提交<i class="material-icons right">send</i></button>
+						<input id="pregdate" type="text" name="pregdate" class="hide">
+							<script>
+							function getNowFormatDate() {
+    var date = new Date();
+    var seperator1 = "-";
+    var seperator2 = ":";
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    if (month >= 1 && month <= 9) {
+        month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+        strDate = "0" + strDate;
+    }
+    var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+            + " " + date.getHours() + seperator2 + date.getMinutes()
+            + seperator2 + date.getSeconds();
+    return currentdate;
+}
+							</script>
+                                                <button type="submit" class="btn waves-effect waves-light btn tooltipped" onclick="document.getElementById('pregdate').value=getNowFormatDate();"  data-position="right" data-delay="50" data-tooltip="写入你的数据！">提交<i class="material-icons right">send</i></button>
 
 					</div>
 				</form>

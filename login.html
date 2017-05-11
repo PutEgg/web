@@ -1,0 +1,72 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+	<title>TestPage</title>
+	<style>
+	body {
+	background-image:url(img/bacl.jpg);
+	}
+
+	main {
+	margin-top:5%;
+	}
+	</style>
+	
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>                                                                                                <script>  $(document).ready(function() {                                
+    $('input#phone').characterCounter();
+  });
+</script>
+
+
+
+<main><div class="container">
+  <div class="row center">
+
+    <div class="col s6 offset-s3 m6 offset-m3">
+
+
+		<h2 class="headera white-text">登录测试</h2>
+		<div class="row section">
+		<div class="card-panel z-depth-5">
+			<div class="row">
+				<form action="login/login.php" method="POST" class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+						<input placeholder="Playername" id="pname" name="pname" type="text" class="validate">
+						<label for="Playername" class="active">账号</label>
+						</div>
+
+                                                <div class="input-field col s12">
+                                                <input placeholder="password" id="ppass" name="ppass" type="password" class="validate">
+                                                <label for="Password" class="active">密码</label>
+                                                </div>
+
+					</div>
+
+                                                <button type="submit" name="submit" class="btn waves-effect waves-light btn tooltipped" data-position="right" data-delay="50" data-tooltip="登录方块图腾！">提交<i class="material-icons right">send</i></button>
+				</form>
+			</div>
+		</div>
+		</div>
+	
+	
+	</div>
+	
+</div>
+</main>
+
+
+</body>
+  </html>
