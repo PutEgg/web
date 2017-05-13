@@ -1,7 +1,7 @@
   <!DOCTYPE html>
   <html>
     <head>
-	<title>TestPage</title>
+	<title>注册账户</title>
 	<style>
 	body {
 	background-image:url(/img/bacl.jpg);
@@ -40,7 +40,7 @@ echo $x;
     <div class="col s6 offset-s3 m6 offset-m3">
 
 
-		<h2 class="headera white-text">添加玩家</h2>
+		<h2 class="headera white-text">注册账户</h2>
 		<div class="row section">
 		<div class="card-panel z-depth-5">
 			<div class="row">
